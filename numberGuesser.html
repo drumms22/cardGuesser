@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+
+
+      .selectBtns {
+        display:none;
+      }
+      ul {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 3%;
+      }
+      .cardStyle {
+        width: 100px;
+        height: 150px;
+        border: 1px solid black;
+        box-shadow: 0 0 5px black;
+      }
+
+      .royalCard {
+        width: 100px;
+        height: 148px;
+        border: 2px solid black;
+        box-shadow: 0 0 5px black;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        width:100%;
+        background-color: #1a1a1a;
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+      #startPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 0 3px black;
+        width: 100%;
+      }
+      #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 0 3px black;
+        width: 100%;
+        border-bottom: 3px solid Black;
+        box-shadow: 0 0 15px black;
+        background-color: blue;
+        font-size: 2vw;
+      }
+      #startPageBody {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 0 3px black;
+        width: 100%;
+      }
+      .startPageColumns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #main {
+        width:100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+      #usersNumberDiv {
+        width:100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 100px;
+        height: 150px;
+        perspective: 1000px;
+        animation-duration: 1s;
+        animation-name: slidein;
+        }
+
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transform: none;
+        }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        }
+
+      @keyframes slidein {
+        from {
+          margin-left: -550px;
+          }
+
+        to {
+          margin-left: 0;
+          }
+        }
+
+      hr {
+        width: 1000px;
+        }
+      #message {
+        color: white;
+        text-shadow: 0 0 3px black;
+        }
+      .btnStyle {
+        background-color:white;
+        color: black;
+        border: 2px solid black;
+        border-radius:  5px 5px 5px 5px;
+        width: 15%;
+        height: 25px;
+        transition: .25s;
+        box-shadow: 0 0 5px black;
+      }
+
+      .btnWrapper {
+        margin-top: 4%;
+        display: inline-block;
+        width: 100%;
+      }
+      .btnStyle:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      #messageEnd {
+        color: white;
+        text-shadow: 0 0 3px black;
+      }
+      #messageAnswer {
+        color: white;
+        text-shadow: 0 0 3px black;
+      }
+      .hint {
+        position: absolute;
+        background-color: white;
+        color: black;
+        width: 25%;
+        height:1.25vw;
+        border: 1px solid black;
+        border-radius:  3px 3px 3px 3px;
+        animation: fadeInOut 1.5s linear infinite;
+        display: none;
+        text-align: center;
+        font-size: ;
+      }
+      .ulHint {
+        border: 1px solid black;
+        box-shadow: 0 0 15px white;
+        animation: fadeInOut 1.5s linear infinite;
+      }
+      @keyframes fadeInOut {
+        0% { box-shadow: 0 0 10px white; }
+        50% { box-shadow: 0 0 0; }
+        100% { box-shadow: 0 0 10px white; }
+      }
+      .ulDim {
+        opacity: .6;
+      }
+      ul:first-child {
+        margin-left: 0;
+      }
+      li {
+        margin-left: 1%;
+      }
+      #hintTitle {
+        color: white;
+        text-shadow: 0 0 3px black;
+        font-size: 1vw;
+      }
+      #hintIcon {
+        color: black;
+        border: 1px solid black;
+        font-size: 1vw;
+        width: 15%;
+        height: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius:  6px 6px 6px 6px;
+        box-shadow: 0 0 5px black;
+        transition: .25s;
+      }
+      #hintIcon:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .hintBackground {
+        background-color:  rgb(255, 255, 255,0.7);
+        border: 1px solid gray;
+        border-radius: 10px 10px 10px 10px;
+      }
+      #popUp {
+        display: none;
+        width:20%;
+        position: fixed;
+        border: 1px solid black;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        color: black;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        left: 40%;
+        top:50%;
+      }
+      .dimBody {
+        opacity: .4;
+      }
+      .slideBack {
+        animation-name: slideBack;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes slideBack {
+
+        from {
+          margin-left: 0;
+          }
+
+        to {
+          margin-left: -550px;
+          }
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="popUp"><p id="popUpMessage"></p></div>
+
+    <div id="startPage">
+
+      <div id="header">
+
+        <h1>Card Guesser</h1>
+
+      </div>
+
+      <div id="startPageBody">
+
+        <div class="startPageColumns">
+
+          <p>This game will guess your card everytime!</p>
+          <p>Dont believe me?</p>
+          <p>Check it out for yourself!</p>
+          <button type="button" name="button" class="btnStyle" onclick="startGame()">Play!</button>
+
+        </div>
+        <div class="startPageColumns">
+
+          <p id="hintTitle">Please click on the tutorial icon if this is your first time playing!</p>
+          <p id="hintIcon" onclick="tutorialBtn()">Tutorial!</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="main">
+
+      <h2 id="message">Please choose a card and memorize it!</h2>
+
+      <div id="numbers">
+
+        <div id="div1">
+          &nbsp;<p class="hint"></p>
+          <p class="btnWrapper"><button type="button" id="btn1" class="btnStyle" name="button" onclick="displayManager(1)">Show!</button>
+          <button type="button" class="selectBtns btnStyle" id="selection1" name="button" onclick="choice(1)">Choose!</button>
+          <button type="button" class="firstSelection btnStyle" id="firstSel1" name="button" onclick="firstSelection(1)">Choose!</button></p>
+
+          <ul id="list1">
+              &nbsp;
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+          </ul>
+
+        </div>
+
+        <hr>
+
+        <div id="div2">
+          &nbsp;<p class="hint"></p>
+          <p class="btnWrapper"><button type="button" id="btn2" class="btnStyle" name="button" onclick="displayManager(2)">Show!</button>
+          <button type="button" class="selectBtns btnStyle" id="selection2" name="button" onclick="choice(2)">Choose!</button>
+          <button type="button" class="firstSelection btnStyle" id="firstSel2" name="button" onclick="firstSelection(2)">Choose!</button></p>
+
+          <ul id="list2">
+
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+          </ul>
+
+        </div>
+
+        <hr>
+
+        <div id="div3">
+          &nbsp;<p class="hint"></p>
+          <p class="btnWrapper"><button type="button" id="btn3" class="btnStyle" name="button" onclick="displayManager(3)">Show!</button>
+          <button type="button" class="selectBtns btnStyle" id="selection3" name="button" onclick="choice(3)">Choose!</button>
+          <button type="button" class="firstSelection btnStyle" id="firstSel3" name="button" onclick="firstSelection(3)">Choose!</button></p>
+
+          <ul id="list3">
+
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="usersNumberDiv">
+
+      <h2 id="messageAnswer"></h2>
+      <p id="usersNumber"></p>
+      <p id="messageEnd"></p>
+
+      <button type="button" class="btnStyle" name="button" onclick="playAgain()">Play again!</button>
+
+    </div>
+
+    <script src="myScript.js"></script>
+  </body>
+</html>
