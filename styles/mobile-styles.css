@@ -6,7 +6,6 @@
 
 
   body {
-
   }
   h1 {
     font-size: 6vw;
@@ -42,13 +41,13 @@
   ul {
 
     height: 75px;
-    width: 1000px;
+    width: 450px;
     align-items:flex-start;
     padding: 0;
   }
   li {
     margin-left: 0;
-    width: 45px;
+    width: 75px;
   }
   .cardStyle {
     width: 50px;
