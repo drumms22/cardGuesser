@@ -41,7 +41,7 @@
   ul {
 
     height: 75px;
-    width: 450px;
+    width: 900px;
     align-items:flex-start;
     padding: 0;
   }
@@ -50,18 +50,18 @@
     width: 75px;
   }
   .cardStyle {
-    width: 50px;
-    height: 75px;
+    width: 100px;
+    height: 150px;
   }
 
   .royalCard {
-    width: 50px;
-    height:73px;
+    width: 100px;
+    height:150px;
   }
   .flip-card {
     background-color: transparent;
-    width: 50px;
-    height: 75px;
+    width: 100px;
+    height: 150px;
 }
 .btnStyle {
   width: 20%;
