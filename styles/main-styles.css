@@ -78,6 +78,7 @@ body {
   display: none;
   flex-direction: column;
   align-items: center;
+  height: 2000px;
 }
 
 #usersNumberDiv {
@@ -139,6 +140,9 @@ hr {
   color: white;
   text-shadow: 0 0 3px black;
   }
+.firstSelection {
+  display: none;
+}
 .btnStyle {
   background-color:white;
   color: black;
@@ -210,7 +214,6 @@ li {
   border: 1px solid black;
   font-size: 1vw;
   width: 15%;
-  height: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -218,6 +221,8 @@ li {
   border-radius:  6px 6px 6px 6px;
   box-shadow: 0 0 5px black;
   transition: .25s;
+  text-shadow: none;
+  padding: .5%;
 }
 #hintIcon:hover {
   background-color: black;
@@ -242,9 +247,6 @@ li {
   z-index: 999;
   left: 40%;
   top:50%;
-}
-#orientWarning {
-   display: none;
 }
 .dimBody {
   opacity: .4;

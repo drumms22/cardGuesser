@@ -4,9 +4,9 @@ let startGame = function(){
   document.getElementById("startPage").style.display = "none";
   document.getElementById("main").style.display = "flex";
 
-  for (var i = 0; i < 3; i++) {
+/*  for (var i = 0; i < 3; i++) {
     document.getElementById("firstSel" + (i + 1)).style.display = "none";
-  }
+  }*/
   //disableBtns();
   setTimeout(splitNmubers,500,true);
 
