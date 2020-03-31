@@ -38,6 +38,11 @@
   #hintTitle {
     font-size: 2vw;
   }
+  .div-container {
+
+    width: 100%;
+
+  }
   ul {
 
     height: 75px;
