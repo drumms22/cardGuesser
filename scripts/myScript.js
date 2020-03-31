@@ -7,7 +7,7 @@ let checkOrientation = function () {
     let btn = document.getElementsByTagName("button");
     let hintIcon = document.getElementById("hintIcon");
 
-  if(window.orientation == 0){
+   if(window.innerHeight > window.innerWidth){
     startPage.classList.add("dimBody");
     popUp.style.display = "flex";
     popUp.style.top = "20%";
