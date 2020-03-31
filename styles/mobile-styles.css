@@ -1,0 +1,55 @@
+@media screen and (max-width: 700px) {
+
+  body {
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+  button {
+    font-size: 2vw;
+  }
+  .btnStyle {
+    height: auto;
+    width: 40%;
+  }
+  #hintIcon {
+    height: auto;
+    font-size: 2vw;
+    border-radius: 3px 3px 3px 3px;
+    padding: 1%;
+  }
+  #hintTitle {
+    font-size: 2vw;
+  }
+  ul {
+
+    height: 75px;
+    width: 425px;
+    align-items:flex-start;
+    padding: 0;
+  }
+  li {
+    margin-left: 0;
+    width: 45px;
+  }
+  .cardStyle {
+    width: 50px;
+    height: 75px;
+  }
+
+  .royalCard {
+    width: 50px;
+    height:73px;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 50px;
+    height: 75px;
+}
+.btnStyle {
+  width: 20%;
+}
+}
