@@ -250,6 +250,9 @@ li {
   left: 40%;
   top:50%;
 }
+#orientWarning {
+   display: none;
+}
 .dimBody {
   opacity: .4;
 }
