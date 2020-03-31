@@ -1,5 +1,5 @@
 
-let checkOrientation = function () {
+/*let checkOrientation = function () {
 
     let startPage = document.getElementById("startPage");
     let popUp = document.getElementById("popUp");
@@ -7,7 +7,7 @@ let checkOrientation = function () {
     let btn = document.getElementsByTagName("button");
     let hintIcon = document.getElementById("hintIcon");
 
-   if(window.innerHeight > window.innerWidth){
+   if(window.innerHeight > window.innerWidth || ){
     startPage.classList.add("dimBody");
     popUp.style.display = "flex";
     popUp.style.top = "20%";
@@ -39,7 +39,7 @@ window.onload = function () {
 
 window.addEventListener("resize", checkOrientation, false);
 
-window.addEventListener("orientationchange",checkOrientation,true);
+window.addEventListener("orientationchange",checkOrientation,true);*/
 
 let startGame = function(){
   document.getElementById("startPage").style.display = "none";
