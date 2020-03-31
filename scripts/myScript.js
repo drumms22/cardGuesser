@@ -37,6 +37,8 @@ window.onload = function () {
   checkOrientation();
 }
 
+window.addEventListener("resize", checkOrientation, false);
+
 window.addEventListener("orientationchange",checkOrientation,true);
 
 let startGame = function(){
