@@ -1,45 +1,4 @@
 
-/*let checkOrientation = function () {
-
-    let startPage = document.getElementById("startPage");
-    let popUp = document.getElementById("popUp");
-    let message = document.getElementById("popUpMessage");
-    let btn = document.getElementsByTagName("button");
-    let hintIcon = document.getElementById("hintIcon");
-
-   if(window.innerHeight > window.innerWidth || ){
-    startPage.classList.add("dimBody");
-    popUp.style.display = "flex";
-    popUp.style.top = "20%";
-    popUp.style.width = "40%";
-    popUp.style.left = "30%";
-    message.innerHTML = "Please play in landscape mode!";
-    btn.disabled = true;
-    hintIcon.style.display = "none";
-
-
-  }else{
-
-    startPage.classList.remove("dimBody");
-    popUp.style.display = "none";
-    popUp.style.top = "50%";
-    popUp.style.width = "20%";
-    popUp.style.left = "40%";
-    message.innerHTML = "";
-    btn.disabled = false;
-    hintIcon.style.display = "flex";
-
-
-  }
-}
-
-window.onload = function () {
-  checkOrientation();
-}
-
-window.addEventListener("resize", checkOrientation, false);
-
-window.addEventListener("orientationchange",checkOrientation,true);*/
 
 let startGame = function(){
   document.getElementById("startPage").style.display = "none";

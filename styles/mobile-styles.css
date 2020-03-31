@@ -68,12 +68,7 @@
 }
 @media screen and (orientation:portrait)
 {
-  button {
-    display: none;
-   }
-  #hintIcon  {
-    display: none;
-   }
+
   #orientWarning {
      display: flex;
      width:60%;
@@ -89,7 +84,10 @@
      left: 20%;
      top:20%;
    }
-   #startPage,#main,#usersNumberDiv{
-     opacity: .3;
+   #startPage,#usersNumberDiv{
+     display: none;
+   }
+   #main{
+     display: none;
    }
 }
