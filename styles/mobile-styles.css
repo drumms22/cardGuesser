@@ -43,13 +43,7 @@
     width: 100%;
 
   }
-  ul {
-
-    height: 75px;
-    width: 900px;
-    align-items:flex-start;
-    padding: 0;
-  }
+  
   li {
     margin-left: 0;
     width: 100px;
