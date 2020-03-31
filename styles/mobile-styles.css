@@ -39,5 +39,10 @@
     justify-content: flex-start;
     min-height: 350px;
   }
+  .btnStyle {
+    height: 50px;
+    width: 25%;
+    border-radius: 15px 15px 15px 15px;
+  }
 
 }
