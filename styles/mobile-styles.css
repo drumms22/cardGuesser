@@ -34,12 +34,13 @@
   .cardStyle {
     width: 250px;
     height: 350px;
-    margin: 0;
+    margin-top: 25%;
   }
 
   .royalCard {
     width: 250px;
-    height: 350px;
+    height: 348px;
+    margin-top: 25%;
   }
   .flip-card {
     width: 250px;
@@ -49,7 +50,14 @@
   ul {
     overflow: auto;
     white-space: nowrap;
-    height: 375px;
+    height: 500px;
+  }
+  #message {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 4vw;
   }
 
   ul li {
@@ -65,10 +73,10 @@
     min-height: 300px;
   }
   .btnStyle {
-    height: 50px;
-    width: 200px;
+    height: 65px;
+    width: 235px;
     border-radius: 15px 15px 15px 15px;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
 }
