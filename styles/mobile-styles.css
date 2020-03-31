@@ -16,15 +16,6 @@
   button {
     font-size: 2vw;
   }
-  #startPageBody {
-    flex-direction: column;
-    align-items: center;
-  }
-  .startPageColumns {
-
-    margin-top: 10%;
-
-  }
   .btnStyle {
     height: auto;
     width: 40%;
@@ -44,25 +35,47 @@
 
   }
 
-  li {
-    margin-left: 0;
-    width: 100px;
-  }
-  .cardStyle {
-    width: 100px;
-    height: 150px;
-  }
-
-  .royalCard {
-    width: 100px;
-    height:150px;
-  }
-  .flip-card {
-    background-color: transparent;
-    width: 100px;
-    height: 150px;
-}
 .btnStyle {
   width: 20%;
 }
+}
+
+
+
+@media only screen and (orientation:portrait){
+
+  body {
+
+    height: 100vw;
+
+    -webkit-transform: rotate(90deg);
+
+    -moz-transform: rotate(90deg);
+
+    -o-transform: rotate(90deg);
+
+    -ms-transform: rotate(90deg);
+
+    transform: rotate(90deg);
+
+  }
+
+}
+
+@media only screen and (orientation:landscape){
+
+  body {
+
+     -webkit-transform: rotate(0deg);
+
+     -moz-transform: rotate(0deg);
+
+     -o-transform: rotate(0deg);
+
+     -ms-transform: rotate(0deg);
+
+     transform: rotate(0deg);
+
+  }
+
 }
