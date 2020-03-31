@@ -1,5 +1,5 @@
 @media screen
-  and (device-width: 800px)
+  and (device-width: 1000px)
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 4) {
 
@@ -43,7 +43,7 @@
     width: 100%;
 
   }
-  
+
   li {
     margin-left: 0;
     width: 100px;
