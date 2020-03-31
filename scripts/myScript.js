@@ -517,8 +517,7 @@ let hintControl = function (num) {
       case 3:
         document.getElementsByClassName("hint")[1].style.display = "block";
         document.getElementsByClassName("hint")[1].innerHTML = "Think of a card and click choose!";
-          document.getElementsByClassName("hint")[1].style.width = "25%";
-          document.getElementById("firstSel2").disabled = false;
+        document.getElementById("firstSel2").disabled = false;
         break;
       case 4:
         dimAffectTutorial(0);
@@ -526,7 +525,6 @@ let hintControl = function (num) {
         hintsBool = false;
         tutorialBtnClick = false;
         document.getElementsByClassName("hint")[i].style.display = "block";
-        document.getElementsByClassName("hint")[i].style.fontSize = "16px";
         document.getElementById("list2").classList.remove("ulHint");
         document.getElementById("list2").classList.remove("ulDim");
         document.getElementsByClassName("hint")[i].innerHTML = "Click show on each pile until you find your card!";
@@ -535,7 +533,6 @@ let hintControl = function (num) {
           for (var i = 0; i < 3; i++) {
 
           document.getElementsByClassName("hint")[i].style.display = "block";
-          document.getElementsByClassName("hint")[i].style.fontSize = "16px";
           document.getElementsByClassName("hint")[i].innerHTML = "And continue the process!";
 
           }

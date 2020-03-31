@@ -46,6 +46,10 @@
     width: 250px;
     height: 350px;
     }
+  .hint {
+    font-size: 3vw;
+    width: 40%;
+  }
   ul {
     overflow: auto;
     white-space: nowrap;
