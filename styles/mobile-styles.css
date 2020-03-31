@@ -61,7 +61,7 @@
     flex-direction: row;
     justify-content: center;
     font-size: 4vw;
-          margin-left: 3%;
+    margin-left: 3%;
   }
 
   ul li {
@@ -87,6 +87,9 @@
     left: 25%;
     font-size: 5vw;
     top:40%;
+  }
+  #usersNumberDiv {
+    font-size: 3vw;
   }
 
 }
