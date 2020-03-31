@@ -1,3 +1,9 @@
+window.onload = function () {
+  if(window.innerHeight > window.innerWidth){
+      document.getElementsByTagName("body").style.opacity = ".5";
+}
+}
+
 let startGame = function(){
   document.getElementById("startPage").style.display = "none";
   document.getElementById("main").style.display = "flex";
